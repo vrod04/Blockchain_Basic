@@ -21,4 +21,19 @@ contract array {
     function push(uint256 _i) public {
         arr2.push(_i);
     }
+
+    // borrar el ultimo elemento del array
+    function pop() public {
+        arr2.pop();
+    }
+
+    // contar el nummero de elementos del array
+    function getLength() public view returns (uint256) {
+        return arr2.length;
+    }
+
+    // limpiar el valor de un elemento en particular del arreglo
+    function remove(uint256 _index) public {
+        delete arr2[_index];
+    }
 }
